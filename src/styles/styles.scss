@@ -2,11 +2,23 @@
 @import "fonts";
 
 body {
+  color: #ffffff;
   font-family: Roboto, sans-serif;
   height: 96vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 50%/cover;
+}
+
+.layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: -1;
 }
 
 h1 {
