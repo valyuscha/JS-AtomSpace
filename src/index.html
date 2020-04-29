@@ -5,9 +5,25 @@
   <title>JS</title>
 </head>
 <body>
-<div>
-  <h1>Hello</h1>
-  <p>Something</p>
+<div class="wrapper">
+  <div class="list-wrapper">
+    <ul id="main-list"></ul>
+  </div>
+  <div class="count">
+    <div id="num1-wrapper">
+      <input id="num1-folder" type="text" maxlength="8" placeholder="Enter number">
+      <p id="error-message1" class="error-message">You have to enter number</p>
+    </div>
+    <div id="num2-wrapper">
+      <input id="num2-folder" type="text" maxlength="8" placeholder="Enter number">
+      <p id="error-message2" class="error-message">You have to enter number</p>
+    </div>
+    <div class="result-wrapper">
+      <button id="countBtn" class="countBtn">Count</button>
+      <span class="result"></span>
+    </div>
+  </div>
 </div>
+<div class="layout"></div>
 </body>
 </html>
