@@ -1,0 +1,21 @@
+@import "~normalize.css";
+@import "fonts";
+
+body {
+  font-family: Roboto, sans-serif;
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  a {
+    color: #0000ff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
