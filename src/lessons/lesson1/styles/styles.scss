@@ -11,6 +11,20 @@ body {
   background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 50%/cover;
 }
 
+.wrapper {
+  width: 445px;
+  height: 190px;
+  background: rgba(0, 0, 0, .7);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px
+}
+
+.list-wrapper {
+  width: 55%;
+}
+
 .layout {
   position: fixed;
   top: 0;
@@ -21,13 +35,67 @@ body {
   z-index: -1;
 }
 
-h1 {
-  a {
-    color: #0000ff;
-    text-decoration: none;
+.count {
+  position: relative;
+}
 
-    &:hover {
-      text-decoration: underline;
-    }
+ul {
+  list-style: none;
+  margin-right: 40px;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+input {
+  display: block;
+  padding: 5px 10px;
+  border: 3px solid rgba(0, 0, 0, .7);
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+#num1-wrapper, #num2-wrapper {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.error-message {
+  color: #ff0000;
+  margin: 0;
+  position: absolute;
+  display: none;
+}
+
+.result-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result {
+  font-size: 20px;
+  color: lime;
+}
+
+.item-value {
+  padding-left: 5px;
+  color: darkorange;
+}
+
+.countBtn {
+  padding: 7px 20px;
+  border: 3px solid rgba(0, 0, 0, .7);
+  border-radius: 10px;
+  background: #5f79cc;
+  color: #ffffff;
+  transition: background .3s;
+  outline: none;
+
+  &:hover {
+    background: #4b4f95;
   }
 }
