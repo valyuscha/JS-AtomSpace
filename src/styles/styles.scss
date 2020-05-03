@@ -48,52 +48,35 @@ body {
   }
 
   ul {
+    opacity: 0;
     text-align: left;
     width: 40%;
     max-height: 100px;
     margin: 0 auto;
     list-style: none;
     padding-left: 0;
-    transform: translateY(-100px);
-    position: relative;
-    z-index: -1;
+    transform: translateY(-20px);
     transition: .3s ease-in-out;
     color: transparent;
     overflow-y: scroll;
 
     li {
       a {
-        color: transparent;
+        color: darkorange;
         text-decoration: none;
-        z-index: 20;
       }
     }
 
     &::-webkit-scrollbar {
       width: 10px;
       height: 8px;
-      background-color: transparent;
+      background-color: rgba(255, 255, 255, .3);
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, .7);
       border-radius: 10px;
     }
-
-  }
-}
-
-.scroll {
-  &::-webkit-scrollbar {
-    width: 10px;
-    height: 8px;
-    background-color: rgba(255, 255, 255, .3);
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .7);
-    border-radius: 10px;
   }
 }
