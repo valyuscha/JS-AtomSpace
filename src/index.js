@@ -14,21 +14,12 @@ $homeWorkObserver.addEventListener('click', () => {
   if (!isMenuHidden) {
     $angle.classList.remove('fa-angle-right')
     $angle.classList.add('fa-angle-down')
-    for (let node of $homeWorkList.childNodes) {
-      console.log('Node: ', node.firstChild)
-      node.firstChild.style.color = 'darkorange'
-    }
+    $homeWorkList.style.opacity = '1'
     $homeWorkList.style.transform = 'translateY(0)'
-    $homeWorkList.style.zIndex = '1'
-    $homeWorkList.classList.add('scroll')
   } else {
     $angle.classList.add('fa-angle-right')
     $angle.classList.remove('fa-angle-down')
-    for (let node of $homeWorkList.childNodes) {
-      console.log('Node: ', node.firstChild)
-      node.firstChild.style.color = 'transparent'
-    }
-    $homeWorkList.style.transform = 'translateY(-50px)'
-    $homeWorkList.style.zIndex = '-1'
+    $homeWorkList.style.opacity = '0'
+    $homeWorkList.style.transform = 'translateY(-20px)'
   }
 })
