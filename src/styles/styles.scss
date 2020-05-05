@@ -47,6 +47,7 @@ body {
         padding-left: 5px;
         position: relative;
         top: 2px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
     }
   }
@@ -64,6 +65,7 @@ body {
 
       a {
         color: #00bc00;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
     }
   }
@@ -87,6 +89,7 @@ body {
       .homework-link {
         color: darkorange;
         text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         &:hover {
           text-decoration: underline;

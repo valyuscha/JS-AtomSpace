@@ -46,6 +46,7 @@ body {
   padding-left: 5px;
   position: relative;
   top: 2px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .wrapper #socials-list {
   overflow: hidden;
@@ -57,6 +58,7 @@ body {
 }
 .wrapper #socials-list li a {
   color: #00bc00;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .wrapper .project-list {
   text-align: left;
@@ -76,6 +78,7 @@ body {
 .wrapper .project-list .homework-item .homework-link {
   color: darkorange;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .wrapper .project-list .homework-item .homework-link:hover {
   text-decoration: underline;
