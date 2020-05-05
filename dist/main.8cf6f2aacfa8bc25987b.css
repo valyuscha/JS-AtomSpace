@@ -7,7 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   justify-content: center;
-  background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 20%/cover;
+  background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 0/cover;
 }
 
 .layout {
@@ -105,4 +105,77 @@ body {
 
 .active {
   height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-size: unset;
+  }
+}
+@media screen and (max-width: 570px) {
+  .wrapper {
+    width: 80%;
+  }
+  .wrapper .name {
+    font-size: 40px;
+  }
+  .wrapper .section-wrapper {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .wrapper .name {
+    font-size: 35px;
+  }
+  .wrapper .section-wrapper {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .wrapper .name {
+    font-size: 30px;
+  }
+  .wrapper .section-wrapper {
+    margin: 0;
+  }
+  .wrapper .section-wrapper .description {
+    font-size: 16px;
+  }
+  .wrapper .section-wrapper .project-list {
+    padding-left: 0;
+    color: #00BC00;
+  }
+  .wrapper .section-wrapper .project-list .homework-item {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 390px) {
+  .wrapper .name {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .wrapper .section-wrapper .description {
+    font-size: 14px;
+  }
+  .wrapper .section-wrapper .project-list .homework-item {
+    font-size: 14px;
+  }
+  .wrapper .section-wrapper #socials-list {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .wrapper .name {
+    font-size: 24px;
+  }
 }
