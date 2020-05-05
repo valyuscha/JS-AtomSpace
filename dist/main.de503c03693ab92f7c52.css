@@ -7,7 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   justify-content: center;
-  background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 20%/cover;
+  background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 0/cover;
 }
 
 .layout {
@@ -39,6 +39,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .wrapper .description span i {
   display: inline-block;
@@ -47,21 +48,30 @@ body {
   top: 2px;
 }
 .wrapper #socials-list {
-  width: 30%;
   overflow: hidden;
   list-style: none;
+  text-align: center;
+}
+.wrapper #socials-list li::before {
+  content: "";
 }
 .wrapper #socials-list li a {
   color: #00bc00;
 }
 .wrapper .project-list {
   text-align: left;
-  padding-left: 18px;
+  padding-left: 0;
   overflow-y: scroll;
-  color: darkorange;
+  list-style-type: none;
+  counter-reset: num;
 }
 .wrapper .project-list .homework-item {
   margin-bottom: 10px;
+}
+.wrapper .project-list .homework-item::before {
+  content: counter(num) ". ";
+  counter-increment: num;
+  color: darkorange;
 }
 .wrapper .project-list .homework-item .homework-link {
   color: darkorange;
@@ -105,4 +115,76 @@ body {
 
 .active {
   height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-size: unset;
+  }
+}
+@media screen and (max-width: 570px) {
+  .wrapper {
+    width: 80%;
+  }
+  .wrapper .name {
+    font-size: 40px;
+  }
+  .wrapper .section-wrapper {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .wrapper .name {
+    font-size: 35px;
+  }
+  .wrapper .section-wrapper {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .wrapper .name {
+    font-size: 30px;
+  }
+  .wrapper .section-wrapper {
+    margin: 0;
+  }
+  .wrapper .section-wrapper .description {
+    font-size: 16px;
+  }
+  .wrapper .section-wrapper .project-list {
+    color: #00BC00;
+  }
+  .wrapper .section-wrapper .project-list .homework-item {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 395px) {
+  .wrapper .name {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .wrapper .section-wrapper .description {
+    font-size: 14px;
+  }
+  .wrapper .section-wrapper .project-list .homework-item {
+    font-size: 14px;
+  }
+  .wrapper .section-wrapper #socials-list {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .wrapper .name {
+    font-size: 24px;
+  }
 }

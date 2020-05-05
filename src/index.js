@@ -30,13 +30,10 @@ document.querySelectorAll('.section-wrapper').forEach(section => {
     document.querySelectorAll('.section-wrapper').forEach(section => {
       section.childNodes[3].classList.remove('open')
       section.childNodes[3].classList.add('close')
-      console.log(section.childNodes[1].childNodes[1].childNodes[1])
       section.childNodes[1].childNodes[1].childNodes[1].classList.remove('fa-angle-down')
       section.childNodes[1].childNodes[1].childNodes[1].classList.add('fa-angle-right')
-      console.log('Remove', section.childNodes[1].childNodes[1].firstChild)
     })
 
-    console.log(e.target.tagName.toLowerCase())
     if (e.target.id === 'homework' || e.target.id === 'homework-angel') {
       isHomeworkMenuOpened = !isHomeworkMenuOpened
       isOtherProjectsMenuOpened = false
@@ -52,8 +49,6 @@ document.querySelectorAll('.section-wrapper').forEach(section => {
       isHomeworkMenuOpened = false
       isOtherProjectsMenuOpened = false
       openClose(section, e.target, isSocialLinksOpened)
-      console.log(section.childNodes[1].childNodes[1].firstChild)
-
     }
   })
 })
@@ -62,7 +57,7 @@ homeWorkLinks.reverse().map(item => {
   let link = `
   <li class="homework-item">
     <a class="homework-link" href=${item.src} target="_blank">${item.name}</a>
-    <a class="homework-link" href=${item.repoSrc} target="_blank" style="margin: 0 20px 0 10px; color: #00bc00;">${item.repoName}</a>
+    <a class="homework-link" href=${item.repoSrc} target="_blank" style="margin: 0 10px; color: #00bc00;">${item.repoName}</a>
   </li>`
   return $homeworkList.insertAdjacentHTML('afterbegin', link)
 })
@@ -71,13 +66,12 @@ otherProjectsLinks.reverse().map(item => {
   let link = `
   <li class="homework-item">
     <a class="homework-link" href=${item.src} target="_blank">${item.name}</a>
-    <a class="homework-link" href=${item.repoSrc} target="_blank" style="margin: 0 20px 0 10px; color: #00bc00;">${item.repoName}</a>
+    <a class="homework-link" href=${item.repoSrc} target="_blank" style="margin: 0 10px; color: #00bc00;">${item.repoName}</a>
   </li>`
   return $otherProjectsList.insertAdjacentHTML('afterbegin', link)
 })
 
 socialNetworksLinks.reverse().map(item => {
-  console.log('Classes', item.iconClasses.join(' '))
   let link = `
   <li class="homework-item">
     <a class="homework-link" href=${item.src} target="_blank">
