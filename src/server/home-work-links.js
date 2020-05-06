@@ -47,5 +47,12 @@ export const homeWorkLinks = [
     src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/objectCounter/dist/index.html',
     repoName: '(repository link)',
     repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/objectCounter'
+  },
+  {
+    id: 8,
+    name: 'Cards of person and counter',
+    src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/personCounterCard/dist/index.html',
+    repoName: '(repository link)',
+    repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/personCounterCard'
   }
 ]
