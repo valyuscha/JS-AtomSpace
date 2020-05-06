@@ -44,8 +44,8 @@ export const homeWorkLinks = [
   {
     id: 7,
     name: 'Counter and object',
-    src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/lesson1/dist/index.html',
+    src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/objectCounter/dist/index.html',
     repoName: '(repository link)',
-    repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/lesson1'
+    repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/objectCounter'
   }
 ]
