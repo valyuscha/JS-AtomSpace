@@ -15,8 +15,12 @@ input2.maxLength = 8
 input2.placeholder = 'Enter number'
 
 const wrapper = document.querySelector('.wrapper')
-wrapper.appendChild(input1)
-wrapper.appendChild(input2)
+const input1Wrapper = document.createElement('div')
+const input2Wrapper = document.createElement('div')
+wrapper.appendChild(input1Wrapper)
+wrapper.appendChild(input2Wrapper)
+input1Wrapper.appendChild(input1)
+input2Wrapper.appendChild(input2)
 
 const buttonsWrapper = document.createElement('div')
 buttonsWrapper.classList.add('btn-wrapper')
@@ -44,8 +48,8 @@ errorMessage2.classList.add('error')
 errorMessage2.id = 'error2'
 errorMessage2.textContent = 'You have to enter the number'
 
-wrapper.appendChild(errorMessage1)
-wrapper.appendChild(errorMessage2)
+input1Wrapper.appendChild(errorMessage1)
+input2Wrapper.appendChild(errorMessage2)
 
 buttonsWrapper.addEventListener('click', e => {
   if (input1.value.trim() !== '' || input2.value.trim() !== '') {

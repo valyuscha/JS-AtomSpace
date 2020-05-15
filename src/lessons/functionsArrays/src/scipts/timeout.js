@@ -31,11 +31,10 @@ let interval
 
 timeoutWrapper.addEventListener('click', e => {
   if (e.target.textContent === 'Start') {
-    console.log('Started')
     startBtn.disabled = true
-    setTimeout(() => {
-      startBtn.style.cursor = 'not-allowed'
-    }, 2000)
+    startBtn.style.cursor = 'not-allowed'
+    startBtn.style.background = 'rgba(255, 255, 255, .4)'
+    startBtn.style.borderColor = '#474747'
     timeout = setTimeout(() => {
       timeoutResult.textContent = `Timeout: ${++timeoutCount}`
     }, 5000)
@@ -44,10 +43,11 @@ timeoutWrapper.addEventListener('click', e => {
       intervalResult.textContent = `Interval: ${++intervalCount}`
     }, 1000)
   } else {
-    console.log('Stoped')
     clearInterval(interval)
     clearTimeout(timeout)
     startBtn.disabled = false
+    startBtn.style.background = '#6495ed'
+    startBtn.style.borderColor = '#5382cc'
     startBtn.style.cursor = 'pointer'
   }
 })
