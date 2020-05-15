@@ -54,5 +54,12 @@ export const homeWorkLinks = [
     src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/personCounterCard/dist/index.html',
     repoName: '(repository link)',
     repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/personCounterCard'
+  },
+  {
+    id: 9,
+    name: 'List/Counter/Timeout',
+    src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/functionsArrays/dist/index.html',
+    repoName: '(repository link)',
+    repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/functionsArrays'
   }
 ]
