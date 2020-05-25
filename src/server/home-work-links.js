@@ -61,5 +61,12 @@ export const homeWorkLinks = [
     src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/functionsArrays/dist/index.html',
     repoName: '(repository link)',
     repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/functionsArrays'
+  },
+  {
+    id: 10,
+    name: 'Api Practice',
+    src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/apiPractice/dist/index.html',
+    repoName: '(repository link)',
+    repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/apiPractice'
   }
 ]
