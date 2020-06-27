@@ -68,5 +68,12 @@ export const homeWorkLinks = [
     src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/apiPractice/dist/index.html',
     repoName: '(repository link)',
     repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/apiPractice'
+  },
+  {
+    id: 11,
+    name: 'Todo',
+    src: 'https://todo-60b73.web.app/',
+    repoName: '(repository link)',
+    repoSrc: 'https://github.com/valyuscha/Todo'
   }
 ]
