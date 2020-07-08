@@ -60,6 +60,7 @@ button {
   cursor: pointer;
   margin-left: 15px;
   outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 button:first-child {
@@ -89,6 +90,10 @@ span {
 }
 
 @media screen and (max-width: 390px) {
+  body {
+    height: 96.9vh;
+  }
+
   .counter {
     display: block;
   }
