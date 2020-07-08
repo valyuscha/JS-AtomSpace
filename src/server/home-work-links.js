@@ -75,5 +75,12 @@ export const homeWorkLinks = [
     src: 'https://todo-60b73.web.app/',
     repoName: '(repository link)',
     repoSrc: 'https://github.com/valyuscha/Todo'
+  },
+  {
+    id: 12,
+    name: 'ES6 modules',
+    src: 'https://valyuscha.github.io/JS-AtomSpace/src/lessons/es6-modules/index.html',
+    repoName: '(repository link)',
+    repoSrc: 'https://github.com/valyuscha/JS-AtomSpace/tree/master/src/lessons/es6-modules'
   }
 ]
