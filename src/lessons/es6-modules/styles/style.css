@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../../../fonts/Roboto-Regular.ttf");
+}
+
+body {
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 50%/cover;
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  width: 445px;
+  background: rgba(0, 0, 0, .7);
+  padding: 20px;
+  border-radius: 10px
+}
+
+.layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: -1;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 10px;
+  border: 5px solid darkorange;
+}
+
+.count {
+  text-align: right;
+}
+
+button {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  background: darkorange;
+  color: #ffffff;
+  font-size: 21px;
+  cursor: pointer;
+  margin-left: 15px;
+  outline: none;
+}
+
+button:first-child {
+  margin-left: 0;
+}
+
+span {
+  display: block;
+  position: relative;
+  margin-top: 60px;
+  text-align: right;
+  font-size: 20px;
+  color: #00ff00;
+}
+
+
+@media screen and (max-width: 1060px) {
+  body {
+    height: 97.5vh;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .counter {
+    display: block;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  input {
+    margin: 0 auto 25px;
+  }
+
+  .count {
+    text-align: center;
+  }
+
+  span {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
