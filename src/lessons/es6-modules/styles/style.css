@@ -10,6 +10,7 @@ body {
   justify-content: center;
   background: url("https://sciencepop.ru/wp-content/uploads/2017/09/business-2717063_1920-e1505809903911.jpg") no-repeat 50% 50%/cover;
   color: #ffffff;
+  overflow-y: hidden;
 }
 
 .container {
