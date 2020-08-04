@@ -187,7 +187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"otherProjectsLinks\", function() { return otherProjectsLinks; });\nvar otherProjectsLinks = [{\n  id: 1,\n  name: 'Restaurant',\n  src: 'https://valyuscha.github.io/Restaurant/index.html',\n  repoName: '(repository link)',\n  repoSrc: 'https://github.com/valyuscha/Restaurant'\n}, {\n  id: 2,\n  name: 'TestFdp',\n  src: 'https://testfdp-cb4ab.web.app/',\n  repoName: '(repository link)',\n  repoSrc: 'https://github.com/valyuscha/AddUsersTest'\n}];\n\n//# sourceURL=webpack:///./server/other-projects-links.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"otherProjectsLinks\", function() { return otherProjectsLinks; });\nvar otherProjectsLinks = [{\n  id: 1,\n  name: 'Restaurant',\n  src: 'https://valyuscha.github.io/Restaurant/index.html',\n  repoName: '(repository link)',\n  repoSrc: 'https://github.com/valyuscha/Restaurant'\n}, {\n  id: 2,\n  name: 'TestFdp',\n  src: 'https://testfdp-cb4ab.web.app/',\n  repoName: '(repository link)',\n  repoSrc: 'https://github.com/valyuscha/AddUsersTest'\n}, {\n  id: 3,\n  name: 'Authentication',\n  src: 'https://my-authentication-ecc99.web.app/',\n  repoName: '(repository link)',\n  repoSrc: 'https://github.com/valyuscha/My-Authentication'\n}];\n\n//# sourceURL=webpack:///./server/other-projects-links.js?");
 
 /***/ }),
 

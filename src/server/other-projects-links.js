@@ -12,5 +12,12 @@ export const otherProjectsLinks = [
     src: 'https://testfdp-cb4ab.web.app/',
     repoName: '(repository link)',
     repoSrc: 'https://github.com/valyuscha/AddUsersTest'
+  },
+  {
+    id: 3,
+    name: 'Authentication',
+    src: 'https://my-authentication-ecc99.web.app/',
+    repoName: '(repository link)',
+    repoSrc: 'https://github.com/valyuscha/My-Authentication'
   }
 ]
